@@ -1,0 +1,1047 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2298DA81EDC44D40077548B /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DA71EDC44D40077548B /* AddEditViewController.swift */; };
+		A2298DAA1EDC45080077548B /* AddEditWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DA91EDC45080077548B /* AddEditWireframe.swift */; };
+		A2298DAC1EDC451D0077548B /* AddEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DAB1EDC451D0077548B /* AddEditPresenter.swift */; };
+		A2298DAE1EDC45330077548B /* AddEditViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DAD1EDC45330077548B /* AddEditViewInterface.swift */; };
+		A2298DB01EDC45570077548B /* AddEditModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DAF1EDC45570077548B /* AddEditModuleInterface.swift */; };
+		A2298DB21EDC45E60077548B /* AddEditInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DB11EDC45E60077548B /* AddEditInteractor.swift */; };
+		A2298DB41EDC45FB0077548B /* AddEditInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DB31EDC45FB0077548B /* AddEditInteractorIO.swift */; };
+		A2298DB81EDC4E100077548B /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DB71EDC4E100077548B /* ContactDetail.swift */; };
+		A235E2131EDE9557001D96A7 /* Contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = A235E2121EDE9557001D96A7 /* Contacts.json */; };
+		A26ADA451EDAA34B00AD45DB /* GoJekContactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */; };
+		A26ADA501EDAA34B00AD45DB /* GoJekContactsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */; };
+		A26ADA6A1EDAA79C00AD45DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA671EDAA79C00AD45DB /* AppDelegate.swift */; };
+		A26ADA711EDAA7B700AD45DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA6C1EDAA7B700AD45DB /* Assets.xcassets */; };
+		A26ADA721EDAA7B700AD45DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA6D1EDAA7B700AD45DB /* LaunchScreen.storyboard */; };
+		A26ADA731EDAA7B700AD45DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA6E1EDAA7B700AD45DB /* Main.storyboard */; };
+		A26ADA741EDAA7B700AD45DB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA701EDAA7B700AD45DB /* Info.plist */; };
+		A26ADA921EDAABF700AD45DB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA911EDAABF700AD45DB /* NetworkManager.swift */; };
+		A26ADA961EDAAC8F00AD45DB /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA951EDAAC8F00AD45DB /* AppDependencies.swift */; };
+		A26ADA981EDAACD000AD45DB /* ListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA971EDAACD000AD45DB /* ListWireframe.swift */; };
+		A26ADA9A1EDAACE700AD45DB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA991EDAACE700AD45DB /* ListViewController.swift */; };
+		A26ADA9C1EDAACFD00AD45DB /* ListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA9B1EDAACFD00AD45DB /* ListViewInterface.swift */; };
+		A26ADA9E1EDAAD5F00AD45DB /* ListModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA9D1EDAAD5F00AD45DB /* ListModuleInterface.swift */; };
+		A26ADAA01EDAAD6F00AD45DB /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA9F1EDAAD6F00AD45DB /* ListPresenter.swift */; };
+		A26ADAA21EDAAD9000AD45DB /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAA11EDAAD9000AD45DB /* ListInteractor.swift */; };
+		A26ADAA41EDAADA100AD45DB /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAA31EDAADA100AD45DB /* ListInteractorIO.swift */; };
+		A26ADAA81EDAB23800AD45DB /* ContactEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAA71EDAB23800AD45DB /* ContactEntity.swift */; };
+		A26ADAAA1EDAB2A200AD45DB /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAA91EDAB2A200AD45DB /* RootWireframe.swift */; };
+		A26ADAAD1EDAC70200AD45DB /* ListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAAC1EDAC70200AD45DB /* ListDataManager.swift */; };
+		A26ADAB01EDAD09700AD45DB /* ContactDisplayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAAF1EDAD09700AD45DB /* ContactDisplayCollection.swift */; };
+		A26ADAB21EDAEC7B00AD45DB /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAB11EDAEC7B00AD45DB /* ContactCell.swift */; };
+		A26ADAB41EDAF52100AD45DB /* IndexSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAB31EDAF52100AD45DB /* IndexSearch.swift */; };
+		A26ADAB61EDAF7EF00AD45DB /* IndexSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAB51EDAF7EF00AD45DB /* IndexSearchCell.swift */; };
+		A26ADAB81EDB129E00AD45DB /* DetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAB71EDB129E00AD45DB /* DetailWireframe.swift */; };
+		A26ADABA1EDB12CC00AD45DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAB91EDB12CC00AD45DB /* DetailViewController.swift */; };
+		A26ADABC1EDB12E600AD45DB /* DetailViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADABB1EDB12E600AD45DB /* DetailViewInterface.swift */; };
+		A26ADABE1EDB133300AD45DB /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADABD1EDB133300AD45DB /* DetailPresenter.swift */; };
+		A26ADAC01EDB135A00AD45DB /* DetailModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADABF1EDB135A00AD45DB /* DetailModuleInterface.swift */; };
+		A26ADAC21EDB137600AD45DB /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAC11EDB137600AD45DB /* DetailInteractor.swift */; };
+		A26ADAC41EDB138100AD45DB /* DetailsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADAC31EDB138100AD45DB /* DetailsInteractorIO.swift */; };
+		A2744E6F1EDDC5BE00C26C56 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2744E6E1EDDC5BE00C26C56 /* ImageRepository.swift */; };
+		A2744E721EDDD02900C26C56 /* CommonExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2744E711EDDD02900C26C56 /* CommonExtentions.swift */; };
+		A275D9621EDC9EC4000C07F7 /* ContactAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275D9611EDC9EC4000C07F7 /* ContactAppError.swift */; };
+		B823702AE4C731D532FD1F41 /* Pods_ContactsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773ADCC032917BE5CAA2CEA9 /* Pods_ContactsApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A26ADA411EDAA34B00AD45DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26ADA241EDAA34A00AD45DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26ADA2B1EDAA34A00AD45DB;
+			remoteInfo = GoJekContactsApp;
+		};
+		A26ADA4C1EDAA34B00AD45DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A26ADA241EDAA34A00AD45DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A26ADA2B1EDAA34A00AD45DB;
+			remoteInfo = GoJekContactsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039FE383ACDB41C386F7BA0B /* Pods-ContactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsApp/Pods-ContactsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		04BAC3ADB13B73EF19C4FA31 /* Pods-GoJekContactsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoJekContactsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoJekContactsApp/Pods-GoJekContactsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		773ADCC032917BE5CAA2CEA9 /* Pods_ContactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A63A4A153F3285D8C00DCD /* Pods-GoJekContactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoJekContactsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoJekContactsApp/Pods-GoJekContactsApp.release.xcconfig"; sourceTree = "<group>"; };
+		A2298DA71EDC44D40077548B /* AddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
+		A2298DA91EDC45080077548B /* AddEditWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditWireframe.swift; sourceTree = "<group>"; };
+		A2298DAB1EDC451D0077548B /* AddEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditPresenter.swift; sourceTree = "<group>"; };
+		A2298DAD1EDC45330077548B /* AddEditViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditViewInterface.swift; sourceTree = "<group>"; };
+		A2298DAF1EDC45570077548B /* AddEditModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditModuleInterface.swift; sourceTree = "<group>"; };
+		A2298DB11EDC45E60077548B /* AddEditInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditInteractor.swift; sourceTree = "<group>"; };
+		A2298DB31EDC45FB0077548B /* AddEditInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditInteractorIO.swift; sourceTree = "<group>"; };
+		A2298DB71EDC4E100077548B /* ContactDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetail.swift; sourceTree = "<group>"; };
+		A235E2121EDE9557001D96A7 /* Contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contacts.json; sourceTree = "<group>"; };
+		A26ADA2C1EDAA34A00AD45DB /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26ADA401EDAA34B00AD45DB /* ContactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoJekContactsAppTests.swift; sourceTree = "<group>"; };
+		A26ADA461EDAA34B00AD45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26ADA4B1EDAA34B00AD45DB /* ContactsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoJekContactsAppUITests.swift; sourceTree = "<group>"; };
+		A26ADA511EDAA34B00AD45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26ADA671EDAA79C00AD45DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A26ADA6C1EDAA7B700AD45DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A26ADA6D1EDAA7B700AD45DB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A26ADA6E1EDAA7B700AD45DB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A26ADA701EDAA7B700AD45DB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26ADA911EDAABF700AD45DB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A26ADA951EDAAC8F00AD45DB /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		A26ADA971EDAACD000AD45DB /* ListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWireframe.swift; sourceTree = "<group>"; };
+		A26ADA991EDAACE700AD45DB /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A26ADA9B1EDAACFD00AD45DB /* ListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewInterface.swift; sourceTree = "<group>"; };
+		A26ADA9D1EDAAD5F00AD45DB /* ListModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModuleInterface.swift; sourceTree = "<group>"; };
+		A26ADA9F1EDAAD6F00AD45DB /* ListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		A26ADAA11EDAAD9000AD45DB /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		A26ADAA31EDAADA100AD45DB /* ListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
+		A26ADAA71EDAB23800AD45DB /* ContactEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactEntity.swift; sourceTree = "<group>"; };
+		A26ADAA91EDAB2A200AD45DB /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		A26ADAAC1EDAC70200AD45DB /* ListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataManager.swift; sourceTree = "<group>"; };
+		A26ADAAF1EDAD09700AD45DB /* ContactDisplayCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactDisplayCollection.swift; path = "../../Application Logic/Model/ContactDisplayCollection.swift"; sourceTree = "<group>"; };
+		A26ADAB11EDAEC7B00AD45DB /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		A26ADAB31EDAF52100AD45DB /* IndexSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSearch.swift; sourceTree = "<group>"; };
+		A26ADAB51EDAF7EF00AD45DB /* IndexSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexSearchCell.swift; sourceTree = "<group>"; };
+		A26ADAB71EDB129E00AD45DB /* DetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailWireframe.swift; sourceTree = "<group>"; };
+		A26ADAB91EDB12CC00AD45DB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A26ADABB1EDB12E600AD45DB /* DetailViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewInterface.swift; sourceTree = "<group>"; };
+		A26ADABD1EDB133300AD45DB /* DetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		A26ADABF1EDB135A00AD45DB /* DetailModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailModuleInterface.swift; sourceTree = "<group>"; };
+		A26ADAC11EDB137600AD45DB /* DetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		A26ADAC31EDB138100AD45DB /* DetailsInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInteractorIO.swift; sourceTree = "<group>"; };
+		A2744E6E1EDDC5BE00C26C56 /* ImageRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		A2744E711EDDD02900C26C56 /* CommonExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtentions.swift; sourceTree = "<group>"; };
+		A275D9611EDC9EC4000C07F7 /* ContactAppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactAppError.swift; sourceTree = "<group>"; };
+		E5CA739307E31B26F6147830 /* Pods-ContactsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactsApp/Pods-ContactsApp.release.xcconfig"; sourceTree = "<group>"; };
+		F38417853EA90334CAA5F00C /* Pods_GoJekContactsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoJekContactsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A26ADA291EDAA34A00AD45DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B823702AE4C731D532FD1F41 /* Pods_ContactsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA3D1EDAA34B00AD45DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA481EDAA34B00AD45DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7279C202E21F6EA4C1D2CFB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F38417853EA90334CAA5F00C /* Pods_GoJekContactsApp.framework */,
+				773ADCC032917BE5CAA2CEA9 /* Pods_ContactsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2298D9E1EDC44C00077548B /* AddEdit */ = {
+			isa = PBXGroup;
+			children = (
+				A2298D9F1EDC44C00077548B /* Application Logic */,
+				A2298DA21EDC44C00077548B /* Module Interface */,
+				A2298DA31EDC44C00077548B /* User Interface */,
+			);
+			path = AddEdit;
+			sourceTree = "<group>";
+		};
+		A2298D9F1EDC44C00077548B /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DA01EDC44C00077548B /* Interactor */,
+				A2298DA11EDC44C00077548B /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A2298DA01EDC44C00077548B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DB11EDC45E60077548B /* AddEditInteractor.swift */,
+				A2298DB31EDC45FB0077548B /* AddEditInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A2298DA11EDC44C00077548B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A2298DA21EDC44C00077548B /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DAF1EDC45570077548B /* AddEditModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		A2298DA31EDC44C00077548B /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DA41EDC44C00077548B /* Presenter */,
+				A2298DA51EDC44C00077548B /* View */,
+				A2298DA61EDC44C00077548B /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A2298DA41EDC44C00077548B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DAB1EDC451D0077548B /* AddEditPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A2298DA51EDC44C00077548B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DA71EDC44D40077548B /* AddEditViewController.swift */,
+				A2298DAD1EDC45330077548B /* AddEditViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2298DA61EDC44C00077548B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DA91EDC45080077548B /* AddEditWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A2298DB61EDC4E030077548B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DB71EDC4E100077548B /* ContactDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A26ADA231EDAA34A00AD45DB = {
+			isa = PBXGroup;
+			children = (
+				A26ADA2E1EDAA34A00AD45DB /* ContactsApp */,
+				A26ADA431EDAA34B00AD45DB /* ContactsAppTests */,
+				A26ADA4E1EDAA34B00AD45DB /* ContactsAppUITests */,
+				A26ADA2D1EDAA34A00AD45DB /* Products */,
+				AF2724315E1E4B3A5B534C77 /* Pods */,
+				7279C202E21F6EA4C1D2CFB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A26ADA2D1EDAA34A00AD45DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA2C1EDAA34A00AD45DB /* ContactsApp.app */,
+				A26ADA401EDAA34B00AD45DB /* ContactsAppTests.xctest */,
+				A26ADA4B1EDAA34B00AD45DB /* ContactsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A26ADA2E1EDAA34A00AD45DB /* ContactsApp */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA661EDAA79C00AD45DB /* Classes */,
+				A26ADA6B1EDAA7B700AD45DB /* Resources */,
+				A26ADA6F1EDAA7B700AD45DB /* Supporting Files */,
+			);
+			path = ContactsApp;
+			sourceTree = "<group>";
+		};
+		A26ADA431EDAA34B00AD45DB /* ContactsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */,
+				A235E2121EDE9557001D96A7 /* Contacts.json */,
+				A26ADA461EDAA34B00AD45DB /* Info.plist */,
+			);
+			path = ContactsAppTests;
+			sourceTree = "<group>";
+		};
+		A26ADA4E1EDAA34B00AD45DB /* ContactsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */,
+				A26ADA511EDAA34B00AD45DB /* Info.plist */,
+			);
+			path = ContactsAppUITests;
+			sourceTree = "<group>";
+		};
+		A26ADA661EDAA79C00AD45DB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA681EDAA79C00AD45DB /* Common */,
+				A26ADA691EDAA79C00AD45DB /* Modules */,
+				A26ADA671EDAA79C00AD45DB /* AppDelegate.swift */,
+				A26ADA951EDAAC8F00AD45DB /* AppDependencies.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A26ADA681EDAA79C00AD45DB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A2744E701EDDD02300C26C56 /* Extentions */,
+				A26ADAA51EDAAEAB00AD45DB /* Model */,
+				A26ADAA61EDAAEAB00AD45DB /* View */,
+				A26ADA901EDAABDF00AD45DB /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A26ADA691EDAA79C00AD45DB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA871EDAA88400AD45DB /* List */,
+				A2298D9E1EDC44C00077548B /* AddEdit */,
+				A26ADA7E1EDAA88400AD45DB /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A26ADA6B1EDAA7B700AD45DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA6C1EDAA7B700AD45DB /* Assets.xcassets */,
+				A26ADA6D1EDAA7B700AD45DB /* LaunchScreen.storyboard */,
+				A26ADA6E1EDAA7B700AD45DB /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A26ADA6F1EDAA7B700AD45DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA701EDAA7B700AD45DB /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A26ADA7E1EDAA88400AD45DB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA7F1EDAA88400AD45DB /* Application Logic */,
+				A26ADA821EDAA88400AD45DB /* Module Interface */,
+				A26ADA831EDAA88400AD45DB /* User Interface */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A26ADA7F1EDAA88400AD45DB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A2298DB61EDC4E030077548B /* Model */,
+				A26ADA801EDAA88400AD45DB /* Interactor */,
+				A26ADA811EDAA88400AD45DB /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A26ADA801EDAA88400AD45DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAC11EDB137600AD45DB /* DetailInteractor.swift */,
+				A26ADAC31EDB138100AD45DB /* DetailsInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A26ADA811EDAA88400AD45DB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A26ADA821EDAA88400AD45DB /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADABF1EDB135A00AD45DB /* DetailModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		A26ADA831EDAA88400AD45DB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA841EDAA88400AD45DB /* Presenter */,
+				A26ADA851EDAA88400AD45DB /* View */,
+				A26ADA861EDAA88400AD45DB /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A26ADA841EDAA88400AD45DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADABD1EDB133300AD45DB /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A26ADA851EDAA88400AD45DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAB91EDB12CC00AD45DB /* DetailViewController.swift */,
+				A26ADABB1EDB12E600AD45DB /* DetailViewInterface.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A26ADA861EDAA88400AD45DB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAB71EDB129E00AD45DB /* DetailWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A26ADA871EDAA88400AD45DB /* List */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA881EDAA88400AD45DB /* Application Logic */,
+				A26ADA8B1EDAA88400AD45DB /* Module Interface */,
+				A26ADA8C1EDAA88400AD45DB /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		A26ADA881EDAA88400AD45DB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAAE1EDAD04800AD45DB /* Model */,
+				A26ADA891EDAA88400AD45DB /* Interactor */,
+				A26ADA8A1EDAA88400AD45DB /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A26ADA891EDAA88400AD45DB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAA11EDAAD9000AD45DB /* ListInteractor.swift */,
+				A26ADAA31EDAADA100AD45DB /* ListInteractorIO.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A26ADA8A1EDAA88400AD45DB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAAC1EDAC70200AD45DB /* ListDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A26ADA8B1EDAA88400AD45DB /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA9D1EDAAD5F00AD45DB /* ListModuleInterface.swift */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		A26ADA8C1EDAA88400AD45DB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA8D1EDAA88400AD45DB /* Presenter */,
+				A26ADA8E1EDAA88400AD45DB /* View */,
+				A26ADA8F1EDAA88400AD45DB /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A26ADA8D1EDAA88400AD45DB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA9F1EDAAD6F00AD45DB /* ListPresenter.swift */,
+				A26ADAAF1EDAD09700AD45DB /* ContactDisplayCollection.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A26ADA8E1EDAA88400AD45DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA991EDAACE700AD45DB /* ListViewController.swift */,
+				A26ADA9B1EDAACFD00AD45DB /* ListViewInterface.swift */,
+				A26ADAB11EDAEC7B00AD45DB /* ContactCell.swift */,
+				A26ADAB51EDAF7EF00AD45DB /* IndexSearchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A26ADA8F1EDAA88400AD45DB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA971EDAACD000AD45DB /* ListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A26ADA901EDAABDF00AD45DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADA911EDAABF700AD45DB /* NetworkManager.swift */,
+				A275D9611EDC9EC4000C07F7 /* ContactAppError.swift */,
+				A2744E6E1EDDC5BE00C26C56 /* ImageRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A26ADAA51EDAAEAB00AD45DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAA71EDAB23800AD45DB /* ContactEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A26ADAA61EDAAEAB00AD45DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAA91EDAB2A200AD45DB /* RootWireframe.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A26ADAAE1EDAD04800AD45DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A26ADAB31EDAF52100AD45DB /* IndexSearch.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2744E701EDDD02300C26C56 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A2744E711EDDD02900C26C56 /* CommonExtentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		AF2724315E1E4B3A5B534C77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04BAC3ADB13B73EF19C4FA31 /* Pods-GoJekContactsApp.debug.xcconfig */,
+				80A63A4A153F3285D8C00DCD /* Pods-GoJekContactsApp.release.xcconfig */,
+				039FE383ACDB41C386F7BA0B /* Pods-ContactsApp.debug.xcconfig */,
+				E5CA739307E31B26F6147830 /* Pods-ContactsApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A26ADA2B1EDAA34A00AD45DB /* ContactsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26ADA541EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsApp" */;
+			buildPhases = (
+				420B106375506CC6452DB506 /* [CP] Check Pods Manifest.lock */,
+				A26ADA281EDAA34A00AD45DB /* Sources */,
+				A26ADA291EDAA34A00AD45DB /* Frameworks */,
+				A26ADA2A1EDAA34A00AD45DB /* Resources */,
+				F9C7C2FF4249B9361174EFA4 /* [CP] Embed Pods Frameworks */,
+				E0771C25F07A53BADD7B5AF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactsApp;
+			productName = GoJekContactsApp;
+			productReference = A26ADA2C1EDAA34A00AD45DB /* ContactsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A26ADA3F1EDAA34B00AD45DB /* ContactsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26ADA571EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsAppTests" */;
+			buildPhases = (
+				A26ADA3C1EDAA34B00AD45DB /* Sources */,
+				A26ADA3D1EDAA34B00AD45DB /* Frameworks */,
+				A26ADA3E1EDAA34B00AD45DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26ADA421EDAA34B00AD45DB /* PBXTargetDependency */,
+			);
+			name = ContactsAppTests;
+			productName = GoJekContactsAppTests;
+			productReference = A26ADA401EDAA34B00AD45DB /* ContactsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A26ADA4A1EDAA34B00AD45DB /* ContactsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A26ADA5A1EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsAppUITests" */;
+			buildPhases = (
+				A26ADA471EDAA34B00AD45DB /* Sources */,
+				A26ADA481EDAA34B00AD45DB /* Frameworks */,
+				A26ADA491EDAA34B00AD45DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A26ADA4D1EDAA34B00AD45DB /* PBXTargetDependency */,
+			);
+			name = ContactsAppUITests;
+			productName = GoJekContactsAppUITests;
+			productReference = A26ADA4B1EDAA34B00AD45DB /* ContactsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A26ADA241EDAA34A00AD45DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = GoJek;
+				TargetAttributes = {
+					A26ADA2B1EDAA34A00AD45DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					A26ADA3F1EDAA34B00AD45DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A26ADA2B1EDAA34A00AD45DB;
+					};
+					A26ADA4A1EDAA34B00AD45DB = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A26ADA2B1EDAA34A00AD45DB;
+					};
+				};
+			};
+			buildConfigurationList = A26ADA271EDAA34A00AD45DB /* Build configuration list for PBXProject "ContactsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A26ADA231EDAA34A00AD45DB;
+			productRefGroup = A26ADA2D1EDAA34A00AD45DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A26ADA2B1EDAA34A00AD45DB /* ContactsApp */,
+				A26ADA3F1EDAA34B00AD45DB /* ContactsAppTests */,
+				A26ADA4A1EDAA34B00AD45DB /* ContactsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26ADA2A1EDAA34A00AD45DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26ADA741EDAA7B700AD45DB /* Info.plist in Resources */,
+				A26ADA731EDAA7B700AD45DB /* Main.storyboard in Resources */,
+				A26ADA711EDAA7B700AD45DB /* Assets.xcassets in Resources */,
+				A26ADA721EDAA7B700AD45DB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA3E1EDAA34B00AD45DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A235E2131EDE9557001D96A7 /* Contacts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA491EDAA34B00AD45DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		420B106375506CC6452DB506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContactsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0771C25F07A53BADD7B5AF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactsApp/Pods-ContactsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C7C2FF4249B9361174EFA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ContactsApp/Pods-ContactsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ContactsApp/Pods-ContactsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A26ADA281EDAA34A00AD45DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2298DB41EDC45FB0077548B /* AddEditInteractorIO.swift in Sources */,
+				A275D9621EDC9EC4000C07F7 /* ContactAppError.swift in Sources */,
+				A26ADAB21EDAEC7B00AD45DB /* ContactCell.swift in Sources */,
+				A26ADAB61EDAF7EF00AD45DB /* IndexSearchCell.swift in Sources */,
+				A26ADA981EDAACD000AD45DB /* ListWireframe.swift in Sources */,
+				A26ADAA81EDAB23800AD45DB /* ContactEntity.swift in Sources */,
+				A2298DAE1EDC45330077548B /* AddEditViewInterface.swift in Sources */,
+				A26ADA961EDAAC8F00AD45DB /* AppDependencies.swift in Sources */,
+				A26ADABE1EDB133300AD45DB /* DetailPresenter.swift in Sources */,
+				A26ADAA01EDAAD6F00AD45DB /* ListPresenter.swift in Sources */,
+				A26ADAAA1EDAB2A200AD45DB /* RootWireframe.swift in Sources */,
+				A2744E6F1EDDC5BE00C26C56 /* ImageRepository.swift in Sources */,
+				A26ADABC1EDB12E600AD45DB /* DetailViewInterface.swift in Sources */,
+				A26ADAAD1EDAC70200AD45DB /* ListDataManager.swift in Sources */,
+				A26ADAA21EDAAD9000AD45DB /* ListInteractor.swift in Sources */,
+				A2298DB81EDC4E100077548B /* ContactDetail.swift in Sources */,
+				A2298DB21EDC45E60077548B /* AddEditInteractor.swift in Sources */,
+				A2298DA81EDC44D40077548B /* AddEditViewController.swift in Sources */,
+				A26ADA921EDAABF700AD45DB /* NetworkManager.swift in Sources */,
+				A26ADAC01EDB135A00AD45DB /* DetailModuleInterface.swift in Sources */,
+				A26ADAC41EDB138100AD45DB /* DetailsInteractorIO.swift in Sources */,
+				A26ADABA1EDB12CC00AD45DB /* DetailViewController.swift in Sources */,
+				A2298DAA1EDC45080077548B /* AddEditWireframe.swift in Sources */,
+				A26ADA9A1EDAACE700AD45DB /* ListViewController.swift in Sources */,
+				A2298DAC1EDC451D0077548B /* AddEditPresenter.swift in Sources */,
+				A26ADAB41EDAF52100AD45DB /* IndexSearch.swift in Sources */,
+				A26ADAB01EDAD09700AD45DB /* ContactDisplayCollection.swift in Sources */,
+				A26ADAA41EDAADA100AD45DB /* ListInteractorIO.swift in Sources */,
+				A2298DB01EDC45570077548B /* AddEditModuleInterface.swift in Sources */,
+				A26ADA9C1EDAACFD00AD45DB /* ListViewInterface.swift in Sources */,
+				A2744E721EDDD02900C26C56 /* CommonExtentions.swift in Sources */,
+				A26ADAC21EDB137600AD45DB /* DetailInteractor.swift in Sources */,
+				A26ADAB81EDB129E00AD45DB /* DetailWireframe.swift in Sources */,
+				A26ADA6A1EDAA79C00AD45DB /* AppDelegate.swift in Sources */,
+				A26ADA9E1EDAAD5F00AD45DB /* ListModuleInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA3C1EDAA34B00AD45DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26ADA451EDAA34B00AD45DB /* GoJekContactsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A26ADA471EDAA34B00AD45DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A26ADA501EDAA34B00AD45DB /* GoJekContactsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A26ADA421EDAA34B00AD45DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26ADA2B1EDAA34A00AD45DB /* ContactsApp */;
+			targetProxy = A26ADA411EDAA34B00AD45DB /* PBXContainerItemProxy */;
+		};
+		A26ADA4D1EDAA34B00AD45DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A26ADA2B1EDAA34A00AD45DB /* ContactsApp */;
+			targetProxy = A26ADA4C1EDAA34B00AD45DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A26ADA521EDAA34B00AD45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A26ADA531EDAA34B00AD45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A26ADA551EDAA34B00AD45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039FE383ACDB41C386F7BA0B /* Pods-ContactsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.viper.contacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A26ADA561EDAA34B00AD45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5CA739307E31B26F6147830 /* Pods-ContactsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/ContactsApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kr.viper.contacts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A26ADA581EDAA34B00AD45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoJekContactsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsApp.app/ContactsApp";
+			};
+			name = Debug;
+		};
+		A26ADA591EDAA34B00AD45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoJekContactsAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactsApp.app/ContactsApp";
+			};
+			name = Release;
+		};
+		A26ADA5B1EDAA34B00AD45DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GoJekContactsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoJekContactsApp;
+			};
+			name = Debug;
+		};
+		A26ADA5C1EDAA34B00AD45DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GoJekContactsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GoJekContactsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A26ADA271EDAA34A00AD45DB /* Build configuration list for PBXProject "ContactsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26ADA521EDAA34B00AD45DB /* Debug */,
+				A26ADA531EDAA34B00AD45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26ADA541EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26ADA551EDAA34B00AD45DB /* Debug */,
+				A26ADA561EDAA34B00AD45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26ADA571EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26ADA581EDAA34B00AD45DB /* Debug */,
+				A26ADA591EDAA34B00AD45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A26ADA5A1EDAA34B00AD45DB /* Build configuration list for PBXNativeTarget "ContactsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A26ADA5B1EDAA34B00AD45DB /* Debug */,
+				A26ADA5C1EDAA34B00AD45DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A26ADA241EDAA34A00AD45DB /* Project object */;
+}
