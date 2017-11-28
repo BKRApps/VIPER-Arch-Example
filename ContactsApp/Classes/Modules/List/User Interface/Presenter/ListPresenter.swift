@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ListPresenter:NSObject,ListModuleInterface,ListInteractorOutput {
+class ListPresenter:ListModuleInterface,ListInteractorOutput {
     var userInterface:ListVIewInterface?
     var listInteractor:ListInteractorInput?
     var listWireframe:ListWireframe?

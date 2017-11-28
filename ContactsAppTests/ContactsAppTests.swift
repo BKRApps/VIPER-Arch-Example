@@ -1,15 +1,15 @@
 //
-//  GoJekContactsAppTests.swift
-//  GoJekContactsAppTests
+//  ContactsAppTests.swift
+//  ContactsAppTests
 //
 //  Created by Kumar Birapuram on 28/05/17.
 //  Copyright © 2017 KRiOSApps. All rights reserved.
 //
 
 import XCTest
-@testable import GoJekContactsApp
+@testable import ContactsApp
 
-class GoJekContactsAppTests: XCTestCase {
+class ContactsAppTests: XCTestCase {
     
     var contactsJsonPath:String!
     var contactsJsonData:Data?
@@ -148,12 +148,47 @@ class GoJekContactsAppTests: XCTestCase {
         let presenter=ListPresenter()
         let interactor=ListInteractor()
         let dataManager=ListDataManager()
-        
+
         listWireframe.listPresenter=presenter
         presenter.listInteractor=interactor
         interactor.output=presenter
         interactor.listDataManager=dataManager
         GJURLSessionHelper.sharedSession.urlSession=sessionMock
         presenter.getListOfContacts()
+    }
+
+    func testPresenter() {
+        let listPresenter = ListPresenter()
+        let listInteractor = ListInteractor()
+        let listDataManager=ListDataManager()
+        let dummyUserInterface = DummyUserInterface()
+        listPresenter.listInteractor = listInteractor
+        listPresenter.userInterface = dummyUserInterface
+        listInteractor.output = listPresenter
+        listInteractor.listDataManager = listDataManager
+        let semaphore = DispatchSemaphore(value: 0)
+        dummyUserInterface.semaphore = semaphore
+        listPresenter.getListOfContacts()
+        if semaphore.wait(timeout: DispatchTime.now()+5)==DispatchTimeoutResult.timedOut{
+            XCTFail("Failed to execute within time")
+        }
+    }
+}
+
+class DummyUserInterface : ListVIewInterface {
+    var semaphore : DispatchSemaphore!
+    func showContactList(contactCollection:ContactDisplayCollection){
+        print(contactCollection)
+        semaphore.signal()
+    }
+    func unableToFetchContacts(error:ContactAppError?){
+        print(error)
+        semaphore.signal()
+    }
+    func generatedIndexSearch(indexSearch:IndexSearch){
+
+    }
+    func scrollContactListToSpecifiedSection(section:String){
+        
     }
 }

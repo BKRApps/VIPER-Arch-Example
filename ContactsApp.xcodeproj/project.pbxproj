@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D52A86A1FCD1DA700AFAEDC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA461EDAA34B00AD45DB /* Info.plist */; };
 		A2298DA81EDC44D40077548B /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DA71EDC44D40077548B /* AddEditViewController.swift */; };
 		A2298DAA1EDC45080077548B /* AddEditWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DA91EDC45080077548B /* AddEditWireframe.swift */; };
 		A2298DAC1EDC451D0077548B /* AddEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DAB1EDC451D0077548B /* AddEditPresenter.swift */; };
@@ -16,8 +17,8 @@
 		A2298DB41EDC45FB0077548B /* AddEditInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DB31EDC45FB0077548B /* AddEditInteractorIO.swift */; };
 		A2298DB81EDC4E100077548B /* ContactDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2298DB71EDC4E100077548B /* ContactDetail.swift */; };
 		A235E2131EDE9557001D96A7 /* Contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = A235E2121EDE9557001D96A7 /* Contacts.json */; };
-		A26ADA451EDAA34B00AD45DB /* GoJekContactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */; };
-		A26ADA501EDAA34B00AD45DB /* GoJekContactsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */; };
+		A26ADA451EDAA34B00AD45DB /* ContactsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA441EDAA34B00AD45DB /* ContactsAppTests.swift */; };
+		A26ADA501EDAA34B00AD45DB /* ContactsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA4F1EDAA34B00AD45DB /* ContactsAppUITests.swift */; };
 		A26ADA6A1EDAA79C00AD45DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26ADA671EDAA79C00AD45DB /* AppDelegate.swift */; };
 		A26ADA711EDAA7B700AD45DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA6C1EDAA7B700AD45DB /* Assets.xcassets */; };
 		A26ADA721EDAA7B700AD45DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A26ADA6D1EDAA7B700AD45DB /* LaunchScreen.storyboard */; };
@@ -85,10 +86,10 @@
 		A235E2121EDE9557001D96A7 /* Contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contacts.json; sourceTree = "<group>"; };
 		A26ADA2C1EDAA34A00AD45DB /* ContactsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26ADA401EDAA34B00AD45DB /* ContactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoJekContactsAppTests.swift; sourceTree = "<group>"; };
+		A26ADA441EDAA34B00AD45DB /* ContactsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppTests.swift; sourceTree = "<group>"; };
 		A26ADA461EDAA34B00AD45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26ADA4B1EDAA34B00AD45DB /* ContactsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoJekContactsAppUITests.swift; sourceTree = "<group>"; };
+		A26ADA4F1EDAA34B00AD45DB /* ContactsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsAppUITests.swift; sourceTree = "<group>"; };
 		A26ADA511EDAA34B00AD45DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A26ADA671EDAA79C00AD45DB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A26ADA6C1EDAA7B700AD45DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -281,7 +282,7 @@
 		A26ADA431EDAA34B00AD45DB /* ContactsAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				A26ADA441EDAA34B00AD45DB /* GoJekContactsAppTests.swift */,
+				A26ADA441EDAA34B00AD45DB /* ContactsAppTests.swift */,
 				A235E2121EDE9557001D96A7 /* Contacts.json */,
 				A26ADA461EDAA34B00AD45DB /* Info.plist */,
 			);
@@ -291,7 +292,7 @@
 		A26ADA4E1EDAA34B00AD45DB /* ContactsAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A26ADA4F1EDAA34B00AD45DB /* GoJekContactsAppUITests.swift */,
+				A26ADA4F1EDAA34B00AD45DB /* ContactsAppUITests.swift */,
 				A26ADA511EDAA34B00AD45DB /* Info.plist */,
 			);
 			path = ContactsAppUITests;
@@ -627,6 +628,9 @@
 		A26ADA241EDAA34A00AD45DB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = GoJek;
@@ -683,6 +687,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D52A86A1FCD1DA700AFAEDC /* Info.plist in Resources */,
 				A235E2131EDE9557001D96A7 /* Contacts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,7 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26ADA451EDAA34B00AD45DB /* GoJekContactsAppTests.swift in Sources */,
+				A26ADA451EDAA34B00AD45DB /* ContactsAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,7 +810,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A26ADA501EDAA34B00AD45DB /* GoJekContactsAppUITests.swift in Sources */,
+				A26ADA501EDAA34B00AD45DB /* ContactsAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -953,7 +958,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = GoJekContactsAppTests/Info.plist;
+				INFOPLIST_FILE = ContactsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -967,7 +972,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = GoJekContactsAppTests/Info.plist;
+				INFOPLIST_FILE = ContactsAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -980,7 +985,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = GoJekContactsAppUITests/Info.plist;
+				INFOPLIST_FILE = ContactsAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -993,7 +998,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = GoJekContactsAppUITests/Info.plist;
+				INFOPLIST_FILE = ContactsAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gojek.contacts.GoJekContactsAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

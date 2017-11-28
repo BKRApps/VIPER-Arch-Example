@@ -13,12 +13,12 @@ import IQKeyboardManagerSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var appdenecies=AppDependencies()
+    var appdependencies=AppDependencies()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UINavigationBar.appearance().tintColor=UIColor.init(red: 80/255.0, green: 227/255.0, blue: 194/255.0, alpha: 1.0)
         IQKeyboardManager.sharedManager().enable = true
-        appdenecies.installRootViewControllerIntoWindow(window!) //starting the root controller
+        appdependencies.installRootViewControllerIntoWindow(window!) //starting the root controller
         return true
     }
 

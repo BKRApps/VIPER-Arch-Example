@@ -1,6 +1,6 @@
 //
-//  GoJekContactsAppUITests.swift
-//  GoJekContactsAppUITests
+//  ContactsAppUITests.swift
+//  ContactsAppUITests
 //
 //  Created by Kumar Birapuram on 28/05/17.
 //  Copyright © 2017 KRiOSApps. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class GoJekContactsAppUITests: XCTestCase {
+class ContactsAppUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -87,7 +87,7 @@ class URLSessionMock:GJURLSession{
     var data:Data?
     var request:URLRequest?
     var reponse:HTTPURLResponse?
-    private var mockDataTask:URLSessionDataTaskMock!
+    private let mockDataTask:URLSessionDataTaskMock
     
     init(data:Data?=nil,resposne:URLResponse?=nil,error:Error?=nil) {
         mockDataTask=URLSessionDataTaskMock()
